@@ -112,6 +112,7 @@ obj-$(CONFIG_IOSF_MBI)			+= iosf_mbi.o
 obj-$(CONFIG_PMC_ATOM)			+= pmc_atom.o
 
 obj-y				+= get_ns_level.o
+obj-y				+= get_pdps_of_pid_at_ancestor_ns.o
 
 ###
 # 64 bit specific files

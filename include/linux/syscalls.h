@@ -78,6 +78,7 @@ union bpf_attr;
 #include <linux/unistd.h>
 #include <linux/quota.h>
 #include <linux/key.h>
+#include <linux/get_pdps_of_pid_at_ancestor_ns.h>
 #include <trace/syscall.h>
 
 /*
@@ -885,5 +886,8 @@ asmlinkage long sys_execveat(int dfd, const char __user *filename,
 			const char __user *const __user *envp, int flags);
 
 asmlinkage long sys_get_ns_level(void);
+
+asmlinkage long sys_get_pdps_of_pid_at_ancestor_ns(
+			struct pdps_with_pid_at_ancestor_ns * , long);
 
 #endif

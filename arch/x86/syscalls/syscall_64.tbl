@@ -329,7 +329,8 @@
 320	common	kexec_file_load		sys_kexec_file_load
 321	common	bpf			sys_bpf
 322	64	execveat		stub_execveat
-323 common  get_ns_level		sys_get_ns_level
+323	common	get_ns_level		sys_get_ns_level
+324	common	get_pdps_of_pid_at_ancestor_ns		sys_get_pdps_of_pid_at_ancestor_ns
 
 #
 # x32-specific system call numbers start at 512 to avoid cache impact
